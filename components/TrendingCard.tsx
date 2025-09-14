@@ -6,7 +6,7 @@ import {images} from "@/constants/images";
 const TrendingCard = ({movie: {movie_id, title, poster_url}, index}: TrendingCardProps) => {
   return (
     <Link href={`/movie/${movie_id}`} asChild>
-      <TouchableOpacity className="w-32 relative pl-5">
+      <TouchableOpacity className="w-32 relative mx-1">
         <Image source={{uri: poster_url}}
                className="w-32 h-48 rounded-lg"
                resizeMode="cover"/>
